@@ -10,15 +10,15 @@ class linkedList():
         self.head = None
     
     def insert(self, nodeValue):
-        n = Node(self.nodeValue)
+        n = Node(nodeValue)
         h = self.head
         
         if h == None:
             self.head = n
         else:
-            while h != None:
+            while h.nextNode != None:
                 h = h.nextNode
-            h.nextNode =n
+            h.nextNode = n
     
 
     def deleteFirst(self):
@@ -33,3 +33,24 @@ class linkedList():
             while k.nextNode!=None:
                 k = k.nextNode
             k=None
+    
+    def traverseList(self):
+        k = self.head
+        if k!= None:
+            print(k.value, end=" -> ")
+            while k.nextNode != None:
+                k = k.nextNode
+                print(k.value, end=" -> " )
+    
+    
+l = linkedList()
+l.insert(5)
+l.insert(4)
+l.insert(3)
+l.insert(2)
+l.insert(1)
+
+l.traverseList()       
+        
+        
+        
