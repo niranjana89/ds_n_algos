@@ -31,9 +31,7 @@ public class HashTable {
 		// get if the tbl index
 		ListNode headNode = tbl[bucket];
 		
-		// check if the index has listNode or not
-		
-		// Check if the key already present
+		// check if the index has listNode or not and Check if the key already present
 		ListNode currentNode = headNode;
 		while(currentNode != null) {
 			if(currentNode.key.equals(key)) {
