@@ -37,7 +37,6 @@ public class HashTable {
 		while (currentNode != null) {
 			if (currentNode.key.equals(key)) {
 				currentNode.value = value;
-				count++;
 				return;
 			}
 			currentNode = currentNode.nxt;
