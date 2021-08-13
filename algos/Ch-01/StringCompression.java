@@ -1,4 +1,3 @@
-package com.algos.arrays;
 
 public class StringRotation {
 
